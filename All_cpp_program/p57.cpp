@@ -1,4 +1,4 @@
-//Demonstrate the Pointers,New and Delete Keyword
+//Demonstrate the Pointers,New(Dynamic allocate) and Delete(Dynamic deallocate) Keyword
 
 #include<iostream>
 using namespace std;
@@ -26,6 +26,8 @@ int main()
     *(arr+1)=11;
     *(arr+1)=12;
     arr[3]=13;
+    //Delete keyword
+    delete[] arr;
     cout<<endl<<"The value of arr[0]: "<<arr[0];
     cout<<endl<<"The value of arr[1]: "<<arr[1];
     cout<<endl<<"The value of arr[2]: "<<arr[2];
@@ -34,6 +36,8 @@ int main()
     //Simple Pointer Array
     int array[5]={0,1,2,3,4};
     int *pt=array;
+    //Delete Keyword
+    // delete[] array; //this will not work here because it deallocate the dynamically allocate array
     cout<<endl<<"array[0]: "<<*pt;
     cout<<endl<<"array[1]: "<<*(pt+1);
     cout<<endl<<"array[2]: "<<*(pt+2);
