@@ -1,0 +1,3 @@
+This program demonstrate the use of "eof()" function.
+i.e end of file which reads the file
+untill it reaches to its end.
