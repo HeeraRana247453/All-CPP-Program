@@ -24,7 +24,7 @@ void complex:: display(void)
 
 int main()
 {
-   //implicit call of the constructor
+   //explicit call of the constructor
    complex c1(2,3);
    c1.display();
 

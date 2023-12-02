@@ -31,7 +31,7 @@ complex::complex()
 int main()
 {
     int x,y;
-
+    //implicit call of the constructor
     complex c1;   //automatically value have been set when the object is created.
     c1.display();
 
@@ -58,7 +58,7 @@ int main()
     10)Constructors can be explicitly called by the user using the scope resolution operator.
     11)Constructors can be inherited by derived classes.
     12)Constructors can be deleted or made private to prevent their usage.
-    13)Constructors can be virtual, which allows for dynamic binding and polymorphism.
+    13)Constructors can be virtual, which allows for dynamic binding and polymorphism.(Not avialable in C++)
   X 14)Constructors can be constexpr, which allows for compile-time evaluation.
     15)Constructors can be explicit, which prevents implicit conversions.
 

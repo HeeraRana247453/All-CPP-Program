@@ -25,4 +25,6 @@ There are two types of polymorphism:
 
     i)Virtual Function:
         A function that is in the parent class but redefined in the child class is called a virtual function. “virtual” keyword is used to declare a virtual function.
+        
+        Function Overriding:-
 */

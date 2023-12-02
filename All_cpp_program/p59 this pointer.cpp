@@ -24,7 +24,7 @@ int main()
 }
 
 
-/*=>The this pointer in C++ is a pointer that refers to the object that is calling the member function.
+/*=>The this pointer in C++ is a pointer that refers to the object that is calling the member function in which it is.
   Here are some of its properties:
 ------------------------------------
 1)The this pointer is an implicit parameter that is passed to all non-static member functions.

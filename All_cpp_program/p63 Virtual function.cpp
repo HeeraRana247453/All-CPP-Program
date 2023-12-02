@@ -21,6 +21,7 @@ class Derived:public Base
             cout<<"2)Display the variable of the derived class derived_var="<<derived_var<<endl<<endl;
         }
 };
+
 int main()
 {
     Base *base_ptr;
