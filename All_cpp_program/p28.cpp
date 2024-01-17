@@ -4,7 +4,7 @@
 #include<iostream>
 using namespace std;
 
-class c2;
+class c2; //c1 class don't know about the c2, so we have to decalre before c1.
 
 class c1
 {
@@ -14,7 +14,7 @@ class c1
        {
          value1=a;
        }
-    friend void swap(c1 &o1,c2 &o2);
+    friend void swap(c1 &o1,c2 &o2);  //this class don't know about the c2, so we have to decalre before it.
     friend void display(c1 o1,c2 o2);
 };
 

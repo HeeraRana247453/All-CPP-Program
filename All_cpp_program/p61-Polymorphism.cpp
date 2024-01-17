@@ -27,4 +27,8 @@ There are two types of polymorphism:
         A function that is in the parent class but redefined in the child class is called a virtual function. “virtual” keyword is used to declare a virtual function.
         
         Function Overriding:-
+
+
+Note:- Binding means linking, for each variables and function.
+       Binding refers to the process of converting identifiers into addresses.
 */

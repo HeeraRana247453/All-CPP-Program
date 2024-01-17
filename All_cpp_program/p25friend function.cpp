@@ -19,17 +19,16 @@ class complex
         cout<<"Complex no. is: "<<a<<" + "<<b<<"i"<<endl;
     }
     
-    friend complex sumComplex(complex c1,complex c2);
+    // friend complex sumComplex(complex c1,complex c2);
     friend void sumcomplex_2(complex c1,complex c2);
 };
 
-
-complex sumComplex(complex c1,complex c2) //It is an external function of the class ,which get permission from the class as a friend to access the private data members
-{
-    complex c3;
-    c3.setdata((c1.a + c2.a),(c1.b + c2.b));  //It is just like (c3.a = c1.a + c2.a) and (c3.b = c1.b + c2.b)
-    return c3;
-}
+// complex sumComplex(complex c1,complex c2) //It is an external function of the class ,which get permission from the class as a friend to access the private data members
+// {
+//     complex c3;
+//     c3.setdata((c1.a + c2.a),(c1.b + c2.b));  //It is just like (c3.a = c1.a + c2.a) and (c3.b = c1.b + c2.b)
+//     return c3;
+// }
 
 void sumcomplex_2(complex c1,complex c2)
 {
@@ -45,14 +44,19 @@ int main()
     c2.setdata(45,70);
     c2.getdata();
 
-    sum = sumComplex(c1,c2);  //Assigning c3 object to the sum object
-    sum.getdata();
+    // sum = sumComplex(c1,c2);  //Assigning c3 object to the sum object
+    // sum.getdata();
 
     sumcomplex_2(c1,c2);   //This is the external function not in the scope of the class but this is friend function.
     return 0;
 }
 
 /*
+    Def:-
+      A friend function is a non-member function that has access to the private and protected members of a class in C++. It is declared using the
+      friend keyword inside the class definition.
+      A friend function can be a global function or a member function of another class.
+
     Properties of the Friend Function:-
     ------------------------------------
     1)Not in the scope of the class.

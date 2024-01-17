@@ -30,7 +30,7 @@ int main()
 1)The this pointer is an implicit parameter that is passed to all non-static member functions.
 2)The this pointer is used to access the members of the object that is calling the member function.
 3)The this pointer is used to disambiguate between the member variable of the object and any other variable with the same name that might be in scope.
-4)The this pointer can be used to return a reference to the object that is calling the member function.
+4)The this pointer can be used to return a reference of the object that is calling the member function.
 5)The type of the this pointer depends on the function declaration. If a member function of class X is declared as const,
   then the type of the this pointer is const X*. Otherwise, the type of the this pointer is X*. 
 */

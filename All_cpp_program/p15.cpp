@@ -11,7 +11,11 @@ float volume(float a,float b,float c);  //Cuboid
 int main()
 {
     float choice,a,b,c;
-    cout<<"1.Area of the circle"<<endl<<"2.Area of the Rectangle."<<endl<<"3.Volume of the Cube"<<endl<<"4.Volume of the Cuboid"<<endl<<"5.Volume of the cylinder."<<endl;
+    cout<<"1.Area of the circle"<<endl
+        <<"2.Area of the Rectangle."<<endl
+        <<"3.Volume of the Cube"<<endl
+        <<"4.Volume of the Cuboid"<<endl
+        <<"5.Volume of the cylinder."<<endl;
     cout<<"Enter the choice: ";
     cin>>choice;
 
@@ -64,7 +68,7 @@ int main()
 
 float area(float a)
 {
-    return pi*a*a;  //area of the cube.
+    return a*a;  //area of the cube.
 }
 float area(float a,float b)
 {

@@ -13,7 +13,7 @@ int main()
     cout<<"Enter the second number: ";
     cin>>b;
 
-    swap(a,b);
+    swap(&a,&b);
 
     cout<<"After swapping: "<<a<<" "<<b<<endl;
     return 0;

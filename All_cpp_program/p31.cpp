@@ -17,7 +17,7 @@ class coordinates
 class calculator
 {   float dis;
    public:
-     calculator();
+     calculator();  //it necessary to define the default constructor before the parametrized constructor.
      void distance(coordinates p1,coordinates p2);
      void dist_Display(void);
 };
@@ -57,7 +57,7 @@ int main()
 
     cout<<"Enter the value of x1 and y1: ";
     cin>>u>>v;
-    p1.setData(u,v);  //if it will not call then parametrized constructor value will be consider.
+    p1.setData(u,v);  //if it will not call then default constructor value will be consider.
 
     cout<<"Enter the value of x2 and y2: ";
     cin>>s>>t;
@@ -72,3 +72,49 @@ int main()
 
     return 0;
 }
+
+// #include<iostream>
+// #include<cmath>
+// using namespace std;
+// class calculator;
+// class coordinates
+// {
+//     float x,y;
+//     public:
+//         coordinates():x(0),y(0){}
+//         coordinates(float a,float b)
+//         {
+//             x=a;
+//             y=b;
+//         }
+//         void display()
+//         {
+//             cout<<"(x,y)= "<<"("<<x<<","<<y<<")"<<endl;
+//         }
+//         friend class calculator;
+// };
+// class calculator
+// {
+//     float dis;
+//     public:
+//         calculator():dis(0){}
+//         calculator(coordinates point1,coordinates point2)
+//         {
+//             dis=sqrt(pow((point1.x-point2.x),2) + pow((point1.y-point2.y),2));
+//         }
+//         void display()
+//         {
+//             cout<<"Distance between two points: "<<dis<<endl;
+//         }
+// };
+// int main()
+// {
+//     coordinates p1(4,8),p2(2,4);
+//     p1.display();
+//     p2.display();
+
+//     calculator d1(p1,p2);
+//     d1.display();
+
+//     return 0;
+// }

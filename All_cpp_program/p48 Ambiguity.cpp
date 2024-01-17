@@ -101,7 +101,10 @@ int main()
     string ope;
     int choice;
 
-    cout<<endl<<"1)Simple Calculator"<<endl<<"2)Scientific Calculator"<<endl<<"3)Hybrid Calculator"<<endl<<"4)Exit"<<endl;
+    cout<<endl<<"1)Simple Calculator"<<endl
+              <<"2)Scientific Calculator"<<endl
+              <<"3)Hybrid Calculator"<<endl
+              <<"4)Exit"<<endl;
     cout<<"Enter the choice: ";cin>>choice;
 
     if(choice==1)

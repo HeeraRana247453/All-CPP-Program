@@ -35,6 +35,7 @@ int main()
         // ptr->setdata(8,9);
         // (*ptr).getdata();
     //Case-4
+        //Dynamic allocation of the pointer object array.
         // complex *ptr;
         // ptr=new complex[4];
         // (*ptr).setdata(1,2);
@@ -59,8 +60,8 @@ int main()
         // (*ptr).getdata();
         // ptr++;
 
-        // (*ptr).setdata(5,6);
-        // (*ptr).getdata();
+        // ptr->.setdata(5,6);
+        // ptr->.getdata();
 
         //In this code, the pointer ptr is incremented after each operation.This means that ptr points to a different element in the dynamically
         // allocated array for each operation. It starts with the first element, then moves to the second, and finally to the third.

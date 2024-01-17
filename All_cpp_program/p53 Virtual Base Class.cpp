@@ -25,7 +25,7 @@ class D:public B,public C
         int d;
         void fun()  //you can'nt call the constructor without defining the values of a,b,c otherwise it will generate the wrong output.
         {
-            d=a*b*c;
+            d=a*b*c;//ambiguity resolved
         }
 };
 
@@ -33,7 +33,7 @@ int main()
 {
     D obj1;
     obj1.a=20;
-    obj1.a=50;
+    obj1.a=50;  //ambiguity resolved
 
     obj1.b=60;
     obj1.c=70;

@@ -7,7 +7,7 @@ class calculator
 {
     public:
       void sumreal(complex c1,complex c2);
-      void sumcmplx(complex c1,complex c2);
+      void sumimg(complex c1,complex c2);
 };
 
 class complex
@@ -34,9 +34,9 @@ void calculator:: sumreal(complex c1,complex c2)
 {
     cout<<endl<<"Sum of the real part is: "<<c1.a+c2.a<<endl;
 }
-void calculator:: sumcmplx(complex c1,complex c2)
+void calculator:: sumimg(complex c1,complex c2)
 {
-    cout<<"Sum of the complex part is: "<<c1.b + c2.b<<"i"<<endl;
+    cout<<"Sum of the imginary part is: "<<c1.b + c2.b<<"i"<<endl;
 }
 
 int main()
@@ -50,7 +50,7 @@ int main()
 
     calculator real,cmplx;
     real.sumreal(c1,c2);
-    cmplx.sumcmplx(c1,c2);
+    cmplx.sumimg(c1,c2);
 
     return 0;
 }

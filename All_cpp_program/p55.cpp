@@ -35,7 +35,7 @@ class derived:public base1,virtual base2  //order of calling the constructor wil
 {
         int c,d;
     public:
-        derived(int i,int j,int k,int l):base1(i),base2(j)
+        derived(int i,int j,int k,int l):base1(i),base2(j) //derived class coonstructor can pass arguments to base class constructors using an initializer list.
         {
             c=k;
             d=l;
@@ -58,7 +58,7 @@ int main()
 
 /* Properties of the derived class Constructor:-
 ---------------------------------------------------------
-    1)When a derived class is created, the constructor of the base class is called first, followed by the constructor of the derived class.
+    1)When an object of derived class is created, the constructor of the base class is called first, followed by the constructor of the derived class.
     2)The derived class constructor determines which base class constructor is called.
     3)If no base class constructor is specified, the default base class constructor will be used.
     4)The base class constructor is called and executed before executing the statements in the body of the derived class.
@@ -67,7 +67,7 @@ int main()
     7)The initializer list initializes variables before the body of the constructor executes.
     8)Constructors in derived classes can call other constructors in their own classes using a member initialization list.
     9)Constructors in derived classes can be overloaded to accept different numbers or types of arguments.
-    10)Constructors in derived classes can be inherited from their base classes or overridden to provide custom behavior for a specific derived class 
+  **10)Constructors in derived classes can be inherited from their base classes or overridden to provide custom behavior for a specific derived class 
     11)If there is any Virtual Base Class in the Multiple Inheritance then the constructor of the Virtual base class will call first.
     12)If both base class are virtual then the constructor will call acc. to the order.
 */

@@ -5,7 +5,12 @@ using namespace std;
 
 int factorial(int num)
 {
-    if(num<=1)
+    if(num<0)
+    {
+        cout<<"Enter the Positive Number !!";
+        return 0;
+    }
+    else if(num==0 || num==1)
     {
         return 1;
     }

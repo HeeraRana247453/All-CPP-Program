@@ -3,49 +3,44 @@
 #include<iostream>
 using namespace std;
 
-int fibb(int num);
-int fibonacci_series(int a,int b);
+int fibo(int n);
+void fibo_series(int a,int b);
 
 int main()
 {
-    int a,b;
-    cout<<"Enter the lower limit: ";
-    cin>>a;
-    cout<<"Enter the upper limit: ";
-    cin>>b;
-    
-    if(a>0 && b>0)
-    {  cout<<"This is the required fibonacci series: ";
-       fibonacci_series(a,b);
+    int x,y;
+    cout<<"Enter the Range(x,y): ";
+    cin>>x>>y;
+    try{
+        if(x<1 || y<1)
+        {
+            throw runtime_error("Enter the positive limit !!");
+        }
+        cout<<endl<<"Fibonacci Series: ";
+        fibo_series(x,y);
     }
-    else
+    catch(const exception &e)
     {
-        cout<<" Error: Enter the positive limit only !!";
-    }
-
-    return 0;
-}
-
-int fibonacci_series(int a,int b)
-{
-    for(int i=a;i<=b;i++)
-    {
-      cout<<" "<<fibb(i);
+        cerr<<"Exception: "<<e.what()<<endl;
     }
     return 0;
 }
-int fibb(int num)
+void fibo_series(int a,int b)
 {
-  if(num==1)
-  {
-    return num-1;
-  }
-  else if(num==2)
-  {
-    return num-1;
-  }
-  else
-  {
-    return fibb(num-1) + fibb(num-2);
-  }
+    int i=a;
+    while(i<=b)
+    {
+        cout<<fibo(i)<<" ";
+        i+=1;
+    }
+}
+int fibo(int n)
+{
+    if(n==1 || n==2)
+    {
+        return n-1;
+    }
+    else{
+        return fibo(n-1) + fibo(n-2);
+    }
 }

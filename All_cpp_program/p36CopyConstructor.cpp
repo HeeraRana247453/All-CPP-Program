@@ -11,7 +11,7 @@ class student
       int rollno;
       float fee;
     public:
-       student();
+       student();//default constructor
        student(string n,int,float); //parametrized constructor
        student(student &obj);//copy constructor
        void display();
@@ -77,14 +77,14 @@ int main()
 */
 
 /* 
-   1)When we do not define the copy constructor inside the class, then the calling of the constructor is called implicit call of copy constructor or Default copy constructor calling.
-   2)when we define the copy constructor inside the class, then the calling of the constructor is called explicit call of the copy constructor or User defined copy constructor calling.
+   1)It is used to create a new object that is a copy of an existing object.
+   2)It initializes the newly created object with the values of an existing object.
    3)It takes an argument of the same class type as a reference.
-   4)It initializes the newly created object with the values of an existing object.
-   5)It is used to create a new object that is a copy of an existing object.
-   6)It is called automatically when an object is passed by value or returned by value.
-   7)If a copy constructor is not defined, the compiler provides a default copy constructor.
-   8)A copy constructor can be defined explicitly by the programmer.
+   4)If a copy constructor is not defined, the compiler provides a default copy constructor.
+   5)A copy constructor can be defined explicitly by the programmer.
+   6)When we do not define the copy constructor inside the class, then the calling of the constructor is called implicit call of copy constructor or Default copy constructor calling.
+   7)when we define the copy constructor inside the class, then the calling of the constructor is called explicit call of the copy constructor or User defined copy constructor calling.
+   8)It is called automatically when an object is passed by value or returned by value.
    9)The copy constructor should not modify the source object.
    10)The copy constructor should allocate memory for the newly created object if necessary.
    11)The copy constructor should be declared as const if it does not modify the source object.

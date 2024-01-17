@@ -1,0 +1,5 @@
+
+Today i want to complete the OOPs concept revesion and then
+i will start studing the DSA sheet which i already know somehow
+so it will be easy to me study DSA ,but first of all i need to know about vector
+and algorithm library in cpp which helps me a lot to do the questions easily

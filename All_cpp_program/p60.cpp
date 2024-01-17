@@ -20,7 +20,7 @@ class A
 int main()
 {
     A obj;
-    obj.setdata(5).getdata();   //Now setdata() is giving the object in which it is called.
+    obj.setdata(5).getdata();   //Now setdata() is giving the object refenence in which it is called.
     obj.getdata();
     return 0;
 }

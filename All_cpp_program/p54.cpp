@@ -1,7 +1,7 @@
 //Demonstrate the Virtual Base class
-//Base class student----->Test subclass
-//Base class student----->Sports subclass
-//Test subclass,Sports subclass------>Result class
+//Base class student----->test_score subclass
+//Base class student----->sport_score subclass
+//test_score subclass,sport_score subclass------>Result class
 
 #include<iostream>
 using namespace std;
@@ -20,7 +20,7 @@ class student
             cout<<"Roll No.: "<<rollno<<endl;
         }
 };
-class test:virtual public student
+class test_score:virtual public student
 {
     protected:
         float physics,chemistry,maths;
@@ -38,7 +38,7 @@ class test:virtual public student
             cout<<"Marks in Maths: "<<maths<<endl;
         }
 };
-class sports:virtual public student
+class sport_score:virtual public student
 {
     protected:
         float score;
@@ -52,7 +52,7 @@ class sports:virtual public student
             cout<<"Score is: "<<score<<endl;
         }
 };
-class results:public test,public sports
+class results:public test_score,public sport_score
 {
     protected:
         float result;

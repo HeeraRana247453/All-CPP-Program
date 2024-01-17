@@ -10,7 +10,8 @@ int main()
 {
   int choice,a,b;
   char x,y;
-  cout<<"1)Addition of two numbers"<<endl<<"2)Addition of the two characters"<<endl;
+  cout<<"1)Addition of two numbers"<<endl
+      <<"2)Addition of the two characters"<<endl;
   cout<<"Enter the choice: ";
   cin>>choice;
 

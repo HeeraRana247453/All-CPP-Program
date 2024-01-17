@@ -28,6 +28,7 @@ int main()
     Base base_obj;
     Derived *derived_ptr;
     Derived derived_obj;
+    
     base_ptr = &derived_obj;
     derived_ptr = &derived_obj;
     

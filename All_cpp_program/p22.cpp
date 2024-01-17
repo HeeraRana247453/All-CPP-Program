@@ -1,4 +1,4 @@
-//Demonstrate the use of the array 
+//Demonstrate the use of the array of object.
 //By entering the data of the employees of a company using the array of the employee.
 #include<iostream>
 using namespace std;

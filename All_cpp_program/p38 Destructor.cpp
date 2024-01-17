@@ -35,7 +35,7 @@ int main()
 }
 
 /* 
-   A destructor is a special member function that is automatically called when an object goes out of scope or is explicitly deleted.
+   A destructor is a special member function that is automatically called, when an object goes out of scope or is explicitly deleted.
    
    Here are 10 properties of a destructor:-
   ------------------------------------------

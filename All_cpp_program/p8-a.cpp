@@ -1,20 +1,51 @@
 //To demonstrate the default arguments
 #include<iostream>
+#include<cmath>
 using namespace std;
 
-int bankAccount(int money,float factor=1.4) //Default Argument
+float SI(float p,float r,float t=1)
 {
-    money = money*factor;
-    return money;
+    float si=p*r*t/100;
+    return si;
+}
+float CI(float p,float r,float t=1,float n=1)
+{
+    float totalamount= p*pow((1+(r/100/n)),(n*t));
+    float compoundinterest= totalamount-p;
+    return compoundinterest;
 }
 int main()
 {
-    int money;
-    cout<<"Enter the amount: ";
-    cin>>money;
+    cout<<"1)Simple Interest"<<endl
+        <<"2)Compound Interest"<<endl;
+    int choice;
+    cout<<"Enter the choice: ";
+    cin>>choice;
+    if(choice==1)
+    {
+        float p,r,t;
+        cout<<"Enter the Principle Amount: ";
+        cin>>p;
+        cout<<"Enter the Rate of Interest: ";
+        cin>>r;
+        cout<<"Enter the Time: ";
+        cin>>t;
+        
+        cout<<"Simple Interest: "<<SI(p,r,t)<<endl;
+    }
+    else if(choice==2)
+    {
+        float p,r,t,n;
+        cout<<"Enter the principle Amount: ";cin>>p;
+        cout<<"Enter the Rate of Interest: ";cin>>r;
+        cout<<"Enter the Time Period: ";cin>>t;
+        cout<<"Enter the no. of times Interest will be compounded per year: ";cin>>n;
 
-    cout<<"The "<<money<<" Rs after 1 year is: "<<bankAccount(money)<<endl;
-    cout<<"For VIP: The "<<money<<" Rs after 1 year is: "<<bankAccount(money,2.4)<<endl;
-
+        cout<<"Compoud Interest: "<<CI(p,r)<<endl;
+    }
+    else{
+        cout<<"Enter a valid choice !!";
+        main();}
+    
     return 0;
 }

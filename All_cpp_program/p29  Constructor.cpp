@@ -10,14 +10,14 @@ class complex
       int b;
     public:
       complex();//default constructor
-      void display(void)
-      {
-        cout<<endl<<"complex no.: "<<a<<" + "<<b<<"i"<<endl;
-      }
       void setdata(int p,int q)
       {
         a=p;
         b=q;
+      }
+      void display(void)
+      {
+        cout<<endl<<"complex no.: "<<a<<" + "<<b<<"i"<<endl;
       }
 };
 

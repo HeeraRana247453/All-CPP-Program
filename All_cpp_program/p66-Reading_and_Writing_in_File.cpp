@@ -7,7 +7,10 @@ using namespace std;
 int main()
 {
     int choice;
-    cout<<"1)Write"<<endl<<"2)Read"<<endl<<"Enter the choice: ";cin>>choice;
+    cout<<"1)Write"<<endl
+        <<"2)Read"<<endl
+        <<"Enter the choice: ";
+        cin>>choice;
 
     cin.ignore(); // Clear the newline character from the input buffer.
 
@@ -41,7 +44,7 @@ File I/O in C++: Reading and Writing Files
 
 These are some useful classes for working with files in C++
 -------------------------------------------------------------
-1)fstreambase
+1)fstream base class
 2)ifstream --> derived from fstreambase
 3)ofstream --> derived from fstreambase
 

@@ -7,7 +7,6 @@ class shop
       int count;
       int itemId[50];
       int itemPrice[50];
-      int n;
     public:
      void setPrice(void);
      void display(void);

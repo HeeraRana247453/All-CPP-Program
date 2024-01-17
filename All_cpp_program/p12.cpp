@@ -26,3 +26,43 @@ int main()
     }
     return 0;
 }
+
+// #include<iostream>
+// using namespace std;
+
+// int fibo(int n)
+// {
+//     int a=0,b=1,c;
+//     if(n==1 || n==2)
+//     {
+//         return n-1;
+//     }
+//     else
+//     {
+//         for(int i=3;i<=n;i++)
+//         {
+//             c=a+b;
+//             a=b;
+//             b=c;
+//         }
+//     }
+//     return c;
+// }
+// int main()
+// {
+//     int m;
+//     cout<<"Enter position of the fibonacci number: ";
+//     cin>>m;
+//     try{
+//         if(m<=0)
+//         {
+//             throw runtime_error("Enter a positive, Non-zero number !!");
+//         }
+//         cout<<"Fibonacci number is: "<<fibo(m);
+//     }
+//     catch(const exception &e)
+//     {
+//         cerr<<"Exception: "<<e.what()<<endl;
+//     }
+//     return 0;
+// }

@@ -17,7 +17,7 @@ class Numbers
 
 int main()
 {
-    Numbers bin;
+    Numbers bin;//creating object
 
     bin.read();
     cout<<"This is your string: ";
@@ -37,20 +37,20 @@ void Numbers:: read(void)
 
 void Numbers:: chk_bin(void)
 {
-    int f=1;
+    bool f=true;
     for (int i = 0; i < s.length(); i++)
     {
         if(s.at(i)!='0' && s.at(i)!='1')  //s.at() function to extract character by character from the string.
         {
-            cout<<"This is not the Binary Number.";
-            f=0;
+            cout<<"NO: This is not the Binary Number.";
+            f=false;
             exit(0);
             // break;
         }
     }
-    if(f==1)
+    if(f==true)
     {
-        cout<<endl<<"This is the binary number !!"<<endl;
+        cout<<endl<<"YES: This is the binary number !!"<<endl;
         cout<<"And its once compliment is:";
         once_comp();   //It will consider the same instance(object) as of the chk_bin().
         display();

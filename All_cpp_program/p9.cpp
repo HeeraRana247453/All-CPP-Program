@@ -4,7 +4,7 @@
 using namespace std;
 #include<iomanip>
 
-float r=297.4;
+float r=297.4;   //Global variable
 
 int main()
 {
@@ -35,3 +35,8 @@ int main()
 
     return 0;
 }
+/* 
+   A reference variable is a type of variable in programming that acts as an alias or alternative name for an
+    existing variable. When a variable is declared as a reference, it becomes an alternative name for an existing
+     variable.
+ */

@@ -17,7 +17,8 @@ class person
         }
         void display_p()
         {
-            cout<<"Name: "<<name<<endl<<"Id :"<<id<<endl;
+            cout<<"Name: "<<name<<endl
+                <<"Id :"<<id<<endl;
         }
 };
 class student:private person
